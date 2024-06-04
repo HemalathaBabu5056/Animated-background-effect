@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="backgroundstyle.css">
+</head>
+<body>
+  <section>
+    <p class="numbers">!  @  # 0 $ 1 % 2 ^ 3 &4 * 5 6 {7 [ 8 : "> 9 ? = \| - 5!@ # 0$ 1 % 2 ^ 3& 4 * 5 ( 6 7 [ 8 : "> 9 ? = \ | -) ~ >` " ]/ ? . , ;' ? / |' } ! @#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%$ 1 % 2 ^ 3 &4 * 5 6 7 [ 8 : "> 9 ? = \| - 5!@ # 0$ 1 % 2 ^ 3& 4 * 5 ( 6 7 [ 8 :2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*567[8:">9?=\|-!@#0$1%2^3&4*56
+      7[8:">9?=\|-5!@#0$1%$ 1 % 2 ^ 3 &4 * 5 6 7 [ 8 : "> 9 ? = \| - 5!@ # 0$ 1 % 2 ^ 3& 4 * 5 $ 6 7 [ 8 :2^3&4*567[8:">9?!@#0$1%2^3&4*567[8:">9?=$ 1 % 2 ^ 3 &4 * 5 6 {7 [ 8 : "> 9 ? = \| - 5!@ # 0$ 1 % 2 ^ 3& 4 * 5 ( 6 7 [ 8 :\|-5!@#0$1%2^3&4*67[8:">9?!@#0$1%2^3&4*567[8:">9?=\|-5!@#0$1%2^3&4*567[8:">9?!@#0$1%2^3&4* @  # 0 $ 1 % 2 ^ 3 &4 * 5 6 7 [ 8 : "> 9 ? = \| - 5!@ # 0$ 1 % 2 ^ 3& 4 * 5 5^6.@7[8:">9?=\|-5!@#0$1%2^3&4*5^$6+7[8:">9?!@#0$1%2^3&4*567[8:">9?=\|- @  # 0 $ 1 % 2 ^ 3 &4 * 5 6 7 [ 8 : "> 9 ? = \| - 5!@ # 0$ 1 % 2 ^ 3& 4 * 5 5!@#0$1%2^3&4*5&*6*7[8:">9?!@#0$1%2^3&4*567[8:">9?=\|-5!@#0$1%2^3&4*5^6>7[8:">9?!@#0$1%2^3&4*56^#7[8:$ 1 % 2 ^ 3 &4 * 5 6 {7 [ 8 : "> 9 ? = \| - 5!@ # 0$ 1 % 2 ^ 3& 4 * 5 ( 6 7 [ 8 :">9?=\|-5!@#0$1%2^3&4*567[8:">9?
+    </p>
+  <!-- </section>
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      let numbers = document.querySelector('.numbers');
+      let numString = numbers.textContent;
+      let fragment = document.createDocumentFragment();
+
+      for (let char of numString) {
+        let span = document.createElement('span');
+        span.textContent = char;
+        fragment.appendChild(span);
+      }
+
+      numbers.textContent = '';
+      numbers.appendChild(fragment);
+    });
+  </script> -->
+
+  <script>
+    let numbers = document.querySelector('.numbers');
+    let numString = numbers.textContent;
+    let splitNum = numString.split("");
+
+
+
+    numbers.textContent = "";
+    for (let i=0; i<splitNum.length; i++){
+      numbers.innerHTML += "<span>"+splitNum[i]+"</span>";
+    }
+  </script>
+</body>
+</html>
